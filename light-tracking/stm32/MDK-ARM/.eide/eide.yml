@@ -1,0 +1,240 @@
+version: "4.1"
+name: LightServo
+type: ARM
+deviceName: null
+packDir: null
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: User
+      files:
+        - path: main.c
+        - path: stm32f1xx_it.c
+        - path: sysclock.c
+        - path: sysclock.h
+        - path: servo.c
+        - path: servo.h
+        - path: usart.c
+        - path: usart.h
+      folders: []
+    - name: Drivers
+      files:
+        - path: ../Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.c
+        - path: ../Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/arm/startup_stm32f103xb.s
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cec.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dac.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dac_ex.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_eth.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_hcd.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2s.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_irda.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_mmc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_nand.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_nor.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pccard.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_sd.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_smartcard.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_sram.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_usart.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_adc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_crc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_dac.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_dma.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_fsmc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_gpio.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_i2c.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_pwr.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rtc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_sdmmc.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_spi.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_tim.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usart.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c
+        - path: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c
+      folders: []
+    - name: CMSIS
+      files: []
+      folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: e1d0611d755e29b067e745dda531419b
+targets:
+  Target 1:
+    cppPreprocessAttrs:
+      defineList:
+        - USE_HAL_DRIVER
+        - STM32F103xB
+      incList:
+        - ../Core/Inc
+        - ../Drivers/STM32F1xx_HAL_Driver/Inc
+        - ../Drivers/CMSIS/Device/ST/STM32F1xx/Include
+        - ../Drivers/CMSIS/Include
+        - .cmsis/include
+        - RTE/_Target 1
+      libList: []
+    excludeList: []
+    settings:
+      debugger: cortex-debug
+    toolchain: AC5
+    toolchainConfigMap:
+      AC5:
+        archExtensions: ""
+        cpuType: Cortex-M3
+        floatingPointHardware: none
+        options:
+          version: 4
+          afterBuildTasks: []
+          asm-compiler:
+            defines: []
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            CXX_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            C_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            c99-mode: true
+            one-elf-section-per-function: true
+            optimization: level-0
+            warnings: all-warnings
+          global:
+            output-debug-info: enable
+            use-microLIB: false
+          linker:
+            $disableOutputTask: false
+            $outputTaskExcludes:
+              - .bin
+              - .s19
+            output-format: elf
+            ro-base: "0x08000000"
+            rw-base: "0x20000000"
+            xo-base: ""
+        scatterFilePath: ""
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 3
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x5000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 3
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x10000"
+                startAddr: "0x8000000"
+              tag: IROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: IROM
+        useCustomScatterFile: false
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+      OpenOCD:
+        baseAddr: "0x08000000"
+        bin: ""
+        interface: stlink
+        target: stm32f1x
+      STLink:
+        address: "0x8000000"
+        bin: ""
+        elFile: None
+        optionBytes: .eide/target 1.st.option.bytes.ini
+        otherCmds: ""
+        proType: SWD
+        resetMode: default
+        runAfterProgram: true
+        speed: 4000
+    uploader: STLink

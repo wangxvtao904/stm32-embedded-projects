@@ -1,0 +1,29 @@
+# Keil MDK build outputs
+Objects/
+Listings/
+build/
+*.o
+*.d
+*.axf
+*.crf
+*.dep
+*.lnp
+*.htm
+*.map
+*.bak
+*.hex
+*.bin
+*.sct
+*.scvd
+*.uvguix.*
+*.uvopt.bak
+
+# VS Code / EIDE
+.vscode/ipch/
+.eide/tmp/
+
+# Misc
+*.log
+__pycache__/
+Thumbs.db
+desktop.ini
